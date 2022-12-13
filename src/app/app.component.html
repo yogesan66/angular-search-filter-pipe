@@ -1,0 +1,11 @@
+<!--<h4>animal list</h4>
+<input type="text" [(ngModel)]="animalname" placeholder="enter the animal name">
+<ul>
+  <li *ngFor="let animal of animals |searchFilter:animalname">{{animal}}</li>
+</ul>-->
+
+<h4>Search students name</h4>
+<input type="text" [(ngModel)]="studentname" placeholder="Enter student name">
+<ul>
+  <li *ngFor="let name of studentnames|searchFilter:studentname">{{name}}</li>
+</ul>
