@@ -16,7 +16,6 @@ export class SearchFilterPipe implements PipeTransform {
     return value.filter((name)=>{
       return name.toLowerCase().includes(studentname)
     })
-
   }
 
 }
