@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { MyserviceService } from './myservice.service';
 
 @Component({
   selector: 'my-app',
@@ -6,11 +7,13 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name = 'Angular ' + VERSION.major;
+  
+  count : number = 0
+ increment(){
+    this.count++;
+    this.num.counter2 = this.count;
+ }
 
-  /*animals=["tiger","lion","fox"]
-  animalname=""*/
+ constructor(private num:MyserviceService){}
+  }
 
-  studentname=""
-  studentnames=["ram","yogesh","gokul","hari","vignesh"]
-}
